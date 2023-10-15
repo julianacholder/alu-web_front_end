@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AlumniConnect</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AlumniConnect</h1>
+        <p>Your gateway to university alumni events and activities.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#professional-events">Professional Development</a></li>
+            <li><a href="#campus-events">Campus Events</a></li>
+        </ul>
+    </nav>
+
+    <section id="professional-events">
+        <h2>Professional Development Events</h2>
+        <!-- Event 1 -->
+        <div class="event">
+            <h3>Alumni Career Summit</h3>
+            <p>Date: [Date]</p>
+            <p>Time: [Time]</p>
+            <p>Description: Join us for a day of career insights and advice from esteemed alumni.</p>
+        </div>
+        <!-- Repeat for other events -->
+    </section>
+
+    <section id="campus-events">
+        <h2>Campus Events</h2>
+        <!-- Event 1 -->
+        <div class="event">
+            <h3>Homecoming Weekend</h3>
+            <p>Date: [Date]</p>
+            <p>Time: [Time]</p>
+            <p>Description: Revisit campus, reconnect with old friends, and make new memories.</p>
+        </div>
+        <!-- Repeat for other events -->
+    </section>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Reserve your slot for upcoming events:</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="alumni-id">Alumni ID:</label>
+            <input type="text" id="alumni-id" name="alumni-id" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Contact Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            <p>Event Selection:</p>
+            <input type="checkbox" id="career-summit" name="event[]" value="Alumni Career Summit">
+            <label for="career-summit">Alumni Career Summit</label>
+            <!-- Repeat for other events -->
+            <label for="comments">Additional Comments/Requests:</label>
+            <textarea id="comments" name="comments"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </footer>
+</body>
+</html>
